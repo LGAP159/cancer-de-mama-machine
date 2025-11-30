@@ -1,68 +1,101 @@
-Classificação de Câncer de Mama com Machine Learning
+🩺 Breast Cancer Classification Using Machine Learning
 
-Este projeto utiliza algoritmos de Machine Learning para classificar tumores de mama como benignos ou malignos, usando o Breast Cancer Wisconsin (Diagnostic) Dataset. O objetivo é comparar diferentes modelos e identificar qual apresenta melhor desempenho no auxílio ao diagnóstico médico.
+Este repositório contém um projeto completo de classificação de câncer de mama utilizando modelos de Machine Learning aplicados ao Breast Cancer Wisconsin (Diagnostic) Dataset.
+O objetivo é comparar diferentes algoritmos de classificação e identificar qual apresenta melhor desempenho para apoiar diagnósticos médicos.
 
-📌 Objetivo
+📌 Conteúdo do Repositório
+/data            → dataset ou link para download  
+/notebooks       → análise exploratória e experimentos  
+/src             → scripts Python com a implementação dos modelos  
+/results         → tabelas e figuras geradas  
+requirements.txt → dependências do projeto  
+README.md        → documentação geral  
 
-Pré-processar os dados do conjunto Breast Cancer.
+📥 Dataset
 
-Treinar e comparar modelos de classificação:
+O projeto utiliza o Breast Cancer Wisconsin (Diagnostic) Dataset, disponível diretamente no Scikit-Learn ou para download em:
 
-Regressão Logística
+🔗 https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic
 
-SVM Linear
+Para carregar via Scikit-Learn:
 
-SVM Polinomial (grau 2 e grau 3)
-
-Avaliar os modelos usando métricas relevantes como:
-
-Acurácia
-
-Precisão
-
-Recall
-
-F1-Score
-
-Curva ROC e AUC
-
-Identificar o modelo mais eficiente para distinguir tumores benignos e malignos.
+from sklearn.datasets import load_breast_cancer
+data = load_breast_cancer()
 
 🧠 Modelos Utilizados
 
+Os seguintes modelos foram treinados:
+
 Logistic Regression
 
-SVM (Support Vector Machine) com:
+SVM com Kernel Linear
 
-Kernel linear
+SVM com Kernel Polinomial (grau 2 e grau 3)
 
-Kernel polinomial grau 2
+Todos os dados passam por:
 
-Kernel polinomial grau 3
+✔ Padronização (StandardScaler)
+✔ Separação em treino/teste (398/171 amostras)
+✔ Avaliação comparativa entre modelos
 
-Os dados foram padronizados usando StandardScaler para garantir melhor desempenho dos modelos.
+🛠️ Como Executar os Scripts
+1. Clone o repositório:
+git clone https://github.com/SEU_USUARIO/breast-cancer-classification-ml.git
+cd breast-cancer-classification-ml
 
-📊 Resultados Resumidos
+2. Instale as dependências:
+pip install -r requirements.txt
 
-O modelo com melhor desempenho geral foi o SVM com Kernel Polinomial Grau 2.
+3. Execute o script principal:
+python src/train_models.py
 
-Ele alcançou 100% de Precisão para tumores malignos, além de excelente Recall e AUC.
 
-A padronização das features foi essencial para o bom desempenho dos modelos.
+Isso irá:
 
-pré-processamento,
+carregar e padronizar os dados
 
-treinamento dos modelos,
+treinar todos os modelos
 
-avaliação final.
+salvar métricas em /results/
 
-Verifique as curvas ROC, matrizes de confusão e tabela de métricas geradas.
+gerar matrizes de confusão, curvas ROC e tabela comparativa
 
-📂 Dataset
+📓 Notebooks
 
-O projeto utiliza o Breast Cancer Wisconsin (Diagnostic) Dataset, que contém 30 features numéricas derivadas de imagens de biópsias.
+O notebook principal se encontra em:
 
-📚 Tecnologias
+notebooks/breast_cancer_analysis.ipynb
+
+
+Ele contém:
+
+EDA (exploração do dataset)
+
+Justificativa dos modelos
+
+Treinamento
+
+Avaliação com gráficos
+
+Comparação final
+
+📊 Resultados Obtidos (Resumo)
+
+O modelo com melhor desempenho foi:
+
+⭐ SVM com Kernel Polinomial (Grau 2)
+
+Com:
+
+Acurácia alta
+
+F1 excelente
+
+AUC superior
+
+100% de precisão para tumores malignos
+
+💻 Tecnologias Utilizadas
 
 Python
 
@@ -74,28 +107,9 @@ scikit-learn
 
 matplotlib
 
-📝 Conclusão
-
-A análise mostrou que modelos baseados em SVM são muito eficazes para esse tipo de classificação, especialmente quando usam kernels polinomiais. O SVM grau 2 apresentou o melhor equilíbrio entre precisão, recall e capacidade de generalização, mostrando potencial para aplicações clínicas de apoio ao diagnóstico.
-
-
-
-
-
-<img width="618" height="470" alt="image" src="https://github.com/user-attachments/assets/97a8e046-adf8-4b0c-83a6-d659ee8d0dd7" />
-
-
-
-
-
-imagem 1-tipos de tumores detectáveis
-
-
-
-<img width="846" height="701" alt="image" src="https://github.com/user-attachments/assets/3e09bbec-17bc-43e5-aa1f-5f0cf27546cc" />
-
-
-imagem 2-desempenhos das maquinas
-
-
-
+📄 requirements.txt sugerido
+numpy
+pandas
+scikit-learn
+matplotlib
+jupyter
