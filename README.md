@@ -62,9 +62,7 @@ gerar matrizes de confusão, curvas ROC e tabela comparativa
 
 📓 Notebooks
 
-O notebook principal se encontra em:
-
-notebooks/breast_cancer_analysis.ipynb
+O notebook principal se encontra em:https://colab.research.google.com/drive/1z8ibAHjOsA3Ouc7Dn8tubyXotHzr2qFT?usp=sharing#scrollTo=jUdAD6MU3DXE
 
 
 Ele contém:
