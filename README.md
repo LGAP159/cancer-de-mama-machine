@@ -45,9 +45,7 @@ Todos os dados passam por:
 tipos de tumores que serão decetados
 
 🛠️ Como Executar os Scripts
-1. Clone o repositório:
-git clone https://github.com/LGAP159/cancer-machine
-cd breast-cancer-classification-ml
+1. Copie o link do repositório git: https://github.com/LGAP159/cancer-machine
 
 2. Instale as dependências:
 pip install -r requirements.txt
