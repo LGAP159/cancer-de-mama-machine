@@ -88,6 +88,14 @@ A análise mostrou que modelos baseados em SVM são muito eficazes para esse tip
 
 
 
-tipos de tumores detectáveis
+imagem 1-tipos de tumores detectáveis
+
+
+
+<img width="846" height="701" alt="image" src="https://github.com/user-attachments/assets/3e09bbec-17bc-43e5-aa1f-5f0cf27546cc" />
+
+
+imagem 2-desempenhos das maquinas
+
 
 
