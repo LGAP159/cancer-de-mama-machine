@@ -111,3 +111,11 @@ pandas
 scikit-learn
 matplotlib
 jupyter
+
+Resultados dos treinos:
+
+
+
+
+<img width="846" height="701" alt="image" src="https://github.com/user-attachments/assets/aa3450e3-727f-45e5-bb14-0b337fc86d37" />
+
