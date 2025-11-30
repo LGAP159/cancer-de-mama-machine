@@ -1,4 +1,4 @@
-🩺 Breast Cancer Classification Using Machine Learning
+🩺 Cancer machine
 
 Este repositório contém um projeto completo de classificação de câncer de mama utilizando modelos de Machine Learning aplicados ao Breast Cancer Wisconsin (Diagnostic) Dataset.
 O objetivo é comparar diferentes algoritmos de classificação e identificar qual apresenta melhor desempenho para apoiar diagnósticos médicos.
